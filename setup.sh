@@ -59,10 +59,10 @@ echo ""
 echo "======================================================================"
 echo "✔ Environment Verified Successfully!"
 python3 -c "
-import torch, safetensors, rich
+import importlib.metadata, torch, safetensors, rich
 print(f'  • PyTorch:     {torch.__version__} (Device: {torch.device(\"cpu\")})')
 print(f'  • SafeTensors: {safetensors.__version__}')
-print(f'  • Rich:        {rich.__version__}')
+print(f'  • Rich:        {importlib.metadata.version(\"rich\")}')
 "
 echo "======================================================================"
 echo "🎯 Environment bootstrap complete. Activate with: source .venv/bin/activate"

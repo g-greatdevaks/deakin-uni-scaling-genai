@@ -1,5 +1,6 @@
 # Core Deep Learning and Tensor Serialization (Central Processing Unit [CPU] Native)
 torch>=2.14.0
+numpy>=2.5.0
 safetensors>=0.8.0
 
 # Terminal Telemetry and Formatting

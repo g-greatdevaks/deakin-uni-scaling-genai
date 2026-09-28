@@ -48,7 +48,7 @@ python -m pip install --quiet --extra-index-url https://download.pytorch.org/whl
 Write-Host ""
 Write-Host "======================================================================" -ForegroundColor Green
 Write-Host "✔ Environment Verified Successfully!" -ForegroundColor Green
-python -c "import torch, safetensors, rich; print(f'  • PyTorch:     {torch.__version__} (Device: {torch.device(\"cpu\")})'); print(f'  • SafeTensors: {safetensors.__version__}'); print(f'  • Rich:        {rich.__version__}')"
+python -c "import importlib.metadata, torch, safetensors, rich; print(f'  • PyTorch:     {torch.__version__} (Device: {torch.device(\"cpu\")})'); print(f'  • SafeTensors: {safetensors.__version__}'); print(f'  • Rich:        {importlib.metadata.version(\"rich\")}')"
 Write-Host "======================================================================" -ForegroundColor Green
 Write-Host "🎯 Environment bootstrap complete. Activate with: .\.venv\Scripts\Activate.ps1" -ForegroundColor Cyan
 Write-Host "======================================================================" -ForegroundColor Cyan
